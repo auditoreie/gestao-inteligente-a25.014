@@ -126,3 +126,104 @@ ul {
   line-height: 120%;
   margin-bottom: 30px;
 }
+
+#monitoring {
+  padding-block: 100px;
+}
+
+#monitoring .container {
+  display: flex;
+  gap: 41px;
+}
+
+#monitoring .container .texts h2 {
+  color: #0B1614;
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 120%;
+}
+
+#monitoring .container .texts p {
+  color: #747A79;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 144%;
+}
+
+#monitoring .card-monitoring-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+
+#monitoring .card-monitoring-wrapper .card-monitoring {
+  width: 282px;
+  text-align: center;
+  padding-block: 47px;
+  border-radius: 15px;
+  border: 1.4px solid rgba(11, 22, 20, 0.13);
+  transition: all .3s ease;
+  cursor: default;
+}
+
+#monitoring .card-monitoring-wrapper .card-monitoring.active,
+#monitoring .card-monitoring-wrapper .card-monitoring:hover {
+  background: #0B1614;
+}
+
+#monitoring .card-monitoring-wrapper .card-monitoring p {
+  margin-bottom: 0;
+  color: #747A79;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 120%;
+}
+
+#monitoring .card-monitoring-wrapper .card-monitoring h3 {
+  margin-bottom: 8px;
+  color: #A0C50F;
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 120%;
+}
+
+#monitoring .card-monitoring-wrapper .card-monitoring.active p,
+#monitoring .card-monitoring-wrapper .card-monitoring:hover p {
+  color: #FFF;
+}
+
+#monitoring .card-monitoring-wrapper .card-monitoring.active h3,
+#monitoring .card-monitoring-wrapper .card-monitoring:hover h3 {
+  color: #D1F349;
+}
+
+#doubts {
+  padding-block: 100px;
+  background-image: url('../img/plantao-section.webp');
+  background-size: cover;
+}
+
+#doubts .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#doubts .container h2 {
+  color: #FFF;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 120%;
+  margin-bottom: 20px;
+}
+
+#doubts .container p {
+  color: #babdbd;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 120%;
+  margin-bottom: 20px;
+}
+
