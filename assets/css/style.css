@@ -227,3 +227,37 @@ ul {
   margin-bottom: 20px;
 }
 
+#about-us {
+  padding-block: 100px 137px;
+}
+
+#about-us .container > div {
+  display: flex;
+  gap: 73px;
+}
+
+#about-us .container > div p {
+  color: #747A79;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 144%;
+}
+
+#about-us .container > div h2 {
+  color: #0B1614;
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 120%;
+}
+
+#about-us .first-block {
+  margin-bottom: 100px;
+}
+
+#about-us a {
+  color: #82A105;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 144%;
+  text-decoration: none;
+}
