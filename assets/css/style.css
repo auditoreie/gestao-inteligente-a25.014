@@ -261,3 +261,61 @@ ul {
   line-height: 144%;
   text-decoration: none;
 }
+
+#partner-and-member {
+  padding-block: 100px;
+}
+
+#partner-and-member .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#partner-and-member h2 {
+  color: #0B1614;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 120%;
+}
+
+#partner-and-member p {
+  color: #747A79;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 144%;
+}
+
+#partner-and-member .btn-container {
+  border-radius: 12px;
+  background: #F4F4F5;
+  padding: 4px;
+  display: flex;
+}
+
+#partner-and-member .btn-container button {
+  border: none;
+  padding: 7px 20px;
+  background-color: none;
+  color: #71717A;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  border-radius: 8px;
+}
+
+
+#partner-and-member .btn-container button.active {
+  color: #0B1614;
+  background: #FFF;
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.05);
+}
+
+#partner-and-member .logos-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
