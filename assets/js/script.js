@@ -63,3 +63,26 @@ document.getElementById('newsletter').addEventListener('submit', function (e) {
     });
 });
 
+const memberButton = document.querySelector('.btn-container button:nth-child(1)');
+const partnerButton = document.querySelector('.btn-container button:nth-child(2)');
+const memberLogos = document.querySelector('.logos-container .logos:nth-child(1)');
+const partnerLogos = document.querySelector('.logos-container .logos:nth-child(2)');
+
+memberButton.addEventListener('click', () => {
+  memberLogos.classList.remove('d-none');
+  partnerLogos.classList.add('d-none');
+
+  // Altera o estado ativo dos botões
+  memberButton.classList.add('active');
+  partnerButton.classList.remove('active');
+});
+
+partnerButton.addEventListener('click', () => {
+  // Torna visível os parceiros e oculta os membros
+  partnerLogos.classList.remove('d-none');
+  memberLogos.classList.add('d-none');
+
+  // Altera o estado ativo dos botões
+  partnerButton.classList.add('active');
+  memberButton.classList.remove('active');
+});
