@@ -92,6 +92,10 @@ ul {
   background: #D1F349;
 }
 
+#header .button-mobile {
+  display: none;
+}
+
 #header {
   position: absolute;
   top: 0;
@@ -117,11 +121,16 @@ ul {
   font-weight: 500;
   line-height: 125%;
   cursor: pointer;
+}
+
+#header .header-options li a {
+  color: #8e9ba2;
+  text-decoration: none;
   transition: all .3s ease;
 }
 
-#header .header-options .active,
-#header .header-options li:hover {
+#header .header-options .active a,
+#header .header-options li a:hover {
   color: #FFF;
 }
 
@@ -525,11 +534,16 @@ input[type="checkbox"] {
 
 #footer .texts ul li {
   font-weight: 500;
+}
+
+#footer .texts ul li a {
+  text-decoration: none;
+  color: #b1b4b3;
   transition: color .3s ease;
 }
 
-#footer .texts ul li.active,
-#footer .texts ul li:hover {
+#footer .texts ul li.active a,
+#footer .texts ul li a:hover {
   color: #FFF;
 }
 
@@ -537,6 +551,24 @@ input[type="checkbox"] {
   display: flex;
   padding-top: 52px;
   justify-content: center;
+}
+
+.offcanvas-body a {
+  text-decoration: none;
+  color: #0B1614;
+}
+
+.offcanvas-body ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+  margin-top: 36px;
+}
+
+.offcanvas-body ul li {
+  font-size: 18px;
+  font-weight: 500;
 }
 
 @media (max-width: 1400px) {
@@ -764,9 +796,23 @@ input[type="checkbox"] {
   #header .header-options {
     display: none;
   }
+
+  #header .button-mobile {
+    display: initial;
+    border: none;
+    background-color: transparent;
+  }
+
+  #header .container {
+    padding-top: 26px;
+  }
 }
 
 @media (max-width: 527px) {
+  #header .container {
+    padding-top: 18px;
+  }
+
   #hero h1 {
     padding-top: 0;
     font-size: 38px;

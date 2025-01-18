@@ -16,15 +16,34 @@
     <div class="container">
       <img src="./assets/img/header-logo.webp" alt="logo">
       <ul class="header-options">
-        <li class="active">Home</li>
-        <li>Quem Somos</li>
-        <li>Contato</li>
+        <li class="active"><a href="#hero">Home</a></li>
+        <li><a href="#about-us">Quem Somos</a></li>
+        <li><a href="#contact-us">Contato</a></li>
         <li>
           <button class="button-default">
             Login
           </button>
         </li>
       </ul>
+      <button
+        class="button-mobile"
+        type="button"
+        data-bs-toggle="offcanvas"
+        data-bs-target="#offcanvasRight"
+        aria-controls="offcanvasRight"
+      >
+        <svg
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path d="M3 7H21" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+          <path d="M3 12H21" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+          <path d="M3 17H21" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+        </svg>        
+      </button>
     </div>
   </header>
   <section id="hero">
@@ -251,11 +270,11 @@
           Monitoramento georreferenciado para impulsionar a restauração ambiental de mais de 400 municípios na Mantiqueira.
         </p>
         <ul>
-          <li class="active">Home</li>
-          <li>Quem Somos</li>
-          <li>Contato</li>
-          <li>Privacidade</li>
-          <li>Termo</li>
+          <li class="active"><a href="#hero">Home</a></li>
+          <li><a href="#about-us">Quem Somos</a></li>
+          <li><a href="#contact-us">Contato</a></li>
+          <li><a href="">Privacidade</a></li>
+          <li><a href="">Termo</a></li>
         </ul>
       </div>
       <div class="copyright">
@@ -263,6 +282,29 @@
       </div>
     </div>
   </footer>
+  <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+    <div class="offcanvas-header">
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <ul>
+        <li>
+          <a href="#hero" class="offcanvas-link">Home</a>
+        </li>
+        <li>
+          <a href="#about-us" class="offcanvas-link">Quem Somos</a>
+        </li>
+        <li>
+          <a href="#contact-us" class="offcanvas-link">Contato</a>
+        </li>
+        <li>
+          <button class="button-default" class="offcanvas-link">
+            Login
+          </button>
+        </li>
+      </ul>
+    </div>
+  </div>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
   <script src="./assets/js/script.js"></script>
