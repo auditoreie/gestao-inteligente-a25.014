@@ -129,6 +129,7 @@ ul {
 
 #monitoring {
   padding-block: 100px;
+  background-color: #FAFAFA;
 }
 
 #monitoring .container {
@@ -264,6 +265,7 @@ ul {
 
 #partner-and-member {
   padding-block: 100px;
+  background: #FAFAFA;
 }
 
 #partner-and-member .container {
@@ -278,6 +280,7 @@ ul {
   font-size: 40px;
   font-weight: 600;
   line-height: 120%;
+  margin-bottom: 20px;
 }
 
 #partner-and-member p {
@@ -286,6 +289,7 @@ ul {
   font-size: 16px;
   font-weight: 400;
   line-height: 144%;
+  margin-bottom: 40px;
 }
 
 #partner-and-member .btn-container {
@@ -293,6 +297,7 @@ ul {
   background: #F4F4F5;
   padding: 4px;
   display: flex;
+  margin-bottom: 40px;
 }
 
 #partner-and-member .btn-container button {
@@ -318,4 +323,165 @@ ul {
   align-items: center;
   justify-content: space-between;
   width: 100%;
+}
+
+#contact-us .wrapper {
+  display: flex;
+}
+
+#contact-us .wrapper .semi-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 154px 0 52px;
+  background-color: #97BF41;
+}
+
+#contact-us .semi-container h2 {
+  color: #0B1614;
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 120%;
+  margin-bottom: 20px;
+}
+
+#contact-us .semi-container p {
+  color: #2E3231;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 144%;
+}
+
+#contact-us .semi-container p a {
+  color: #025669;
+  text-decoration: none;
+}
+
+#contact-us .semi-container .first-paragraph {
+  margin-bottom: 30px;
+}
+
+#contact-us .semi-container .second-paragraph {
+  margin-bottom: 62px;
+}
+
+#contact-us .semi-container h4 {
+  color: #0B1614;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 120%;
+  margin-bottom: 27px;
+}
+
+#newsletter .imputed-button {
+  display: flex;
+  padding: 10px;
+  border-radius: 1000px;
+  background: #FFF;
+}
+
+#newsletter .imputed-button input {
+  flex: 1 1 auto;
+  padding-left: 10px;
+  border: none;
+  border-radius: 1000px;
+}
+
+#newsletter .imputed-button input:focus-visible {
+  outline: none;
+}
+
+#newsletter .terms-wrapper {
+  margin-top: 15px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.checkbox-container {
+  display: inline-block;
+  position: relative;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+.checkbox-container label {
+  width: 16px;
+  height: 16px;
+  background-color: #d6ff3e;
+  border: none;
+  border-radius: 0;
+  position: relative;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.checkbox-container label svg {
+  visibility: hidden;
+}
+
+.checkbox-container input[type="checkbox"]:checked + label svg {
+  visibility: visible;
+}
+
+.terms-wrapper span {
+  color: #2E3231;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 125%;
+  margin-bottom: -2px;
+}
+
+#footer {
+  padding-block: 100px 37px;
+  background: #0B1614;
+  color: #b1b4b3;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 144%;
+  margin-bottom: 41px;
+}
+
+#footer .texts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-bottom: 1px solid #545b5a;
+}
+
+#footer .texts img {
+  margin-bottom: 29px;
+}
+
+#footer .texts p {
+  width: 388px;
+  text-align: center;
+  margin-bottom: 41px;
+}
+
+#footer .texts ul {
+  display: flex;
+  gap: 44px;
+  margin-bottom: 52px;
+  cursor: pointer;
+}
+
+#footer .texts ul li {
+  font-weight: 500;
+  transition: color .3s ease;
+}
+
+#footer .texts ul li.active,
+#footer .texts ul li:hover {
+  color: #FFF;
+}
+
+#footer .copyright {
+  display: flex;
+  padding-top: 52px;
+  justify-content: center;
 }

@@ -180,25 +180,31 @@
   </section>
   <section id="contact-us">
     <div class="wrapper">
-      <img src="./assets/img/contact-us.webp" alt="Muda de arvore com terra em uma mão">
+      <img
+        src="./assets/img/contact-us.webp"
+        alt="Muda de arvore com terra em uma mão"
+        class="img-fluid"
+        width="708px"
+        height="638px"
+      >
       <div class="semi-container">
         <h2>Fale Conosco</h2>
-        <p>Seja parte do programa Conservador da Mantiqueira e acompanhe de perto nossas iniciativas de restauração.</p>
-        <p>
+        <p class="first-paragraph">Seja parte do programa Conservador da Mantiqueira e acompanhe de perto nossas iniciativas de restauração.</p>
+        <p class="second-paragraph">
           Para dúvidas ou mais informações, envie um e-mail para:
           <br>
           <a href="mailto:contato.portaldamantiqueira@TNC.org">contato.portaldamantiqueira@TNC.org</a>
         </p>
         <div>
           <h4>Inscreva-se abaixo para receber novidades e atualizações sobre o Portal da Mantiqueira:</h4>
-          <form method="post">
-            <div class="form-wrapper">
+          <form method="post" id="newsletter">
+            <div class="imputed-button">
               <input
                 name="email"
                 type="text"
                 placeholder="Digite seu email"
               >
-              <button class="btn">
+              <button class="button-default-icon -green">
                 Quero Receber
                 <div class="icon">
                   <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -208,16 +214,25 @@
                 </div>
               </button>
             </div>
-            <div class="form-wrapper">
-              <input name="terms" type="checkbox">
-              <label for="terms">Li e aceito os termos de política e privacidade.</label>
+            <div class="terms-wrapper">
+              <div class="checkbox-container">
+                <input id="terms" type="checkbox">
+                <label for="terms">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="8" height="7" viewBox="0 0 8 7" fill="none">
+                    <path d="M1 3.22L3.66571 5.44L7.22 1" stroke="black" stroke-linecap="round"/>
+                  </svg>
+                </label>
+              </div>
+              <span>
+                Li e aceito os termos de política e privacidade.
+              </span>
             </div>
           </form>
         </div>
       </div>
     </div>
   </section>
-  <footer>
+  <footer id="footer">
     <div class="container">
       <div class="texts">
         <img src="./assets/img/footer-logo.webp" alt="logo">
